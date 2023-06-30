@@ -71,10 +71,6 @@ btnscrollto.addEventListener('click', function (e) {
 //   });
 // });
 
-// 이벤트 위임
-// 1. add event listener to common parent element
-// 2. Determine what element originate the event
-
 document.querySelector('.nav__links').addEventListener('click', function (e) {
   e.preventDefault();
 
@@ -270,96 +266,3 @@ dotContainer.addEventListener('click', function (e) {
     activateDot(slide);
   }
 });
-/////////////////////////////////////////////////////////////////
-////////////////////////////exercise/////////////////////////////
-/////////////////////////////////////////////////////////////////
-
-//-------------190-----------
-//Selecting elements
-// console.log(document.documentElement);
-// console.log(document.head);
-// console.log(document.body);
-
-// const header = document.querySelector('.header');
-// const allsection = document.querySelectorAll('.section');
-// console.log(allsection);
-
-// document.getElementById('section--1');
-// const allButtons = document.getElementsByTagName('button');
-// console.log(allButtons);
-// document.getElementsByClassName('btn');
-
-// //creating elements
-// const message = document.createElement('div');
-// message.classList.add('cookie-message');
-// message.innerHTML =
-//   'We use cookied for improved functionality and analytics. <button class="btn btn--close-cookie">Got it!</button>';
-
-// // header.prepend(message);
-// // // header.append(message);
-// // header.append(message.cloneNode(true));
-
-// header.before(message);
-// header.after(message);
-
-// //delete elements
-// document
-//   .querySelector('.btn--close-cookie')
-//   .addEventListener('click', function () {
-//     // message.remove();
-//     message.parentElement.removeChild(message);
-//   });
-
-// //style
-// message.style.backgroundColor = '#37383d';
-// message.style.width = '120%';
-
-// message.style.height =
-//   Number.parseFloat(getComputedStyle(message).height, 10) + 30 + 'px';
-
-// document.documentElement.style.setProperty('--color-primary', 'orangered');
-
-// //Atributes
-
-// const logo = document.querySelector('.nav__logo');
-// console.log(logo.alt);
-// console.log(logo.src);
-
-// //non-standrd
-
-// console.log(logo.disigner);
-// console.log(logo.getAttribute('disigner'));
-// logo.setAttribute('company', 'Bankist');
-
-// //class
-
-// logo.classList.add();
-// logo.classList.remove();
-// logo.classList.toggle();
-// logo.classList.contains();
-
-//-------------191-------------
-// const randomint = (min, max) =>
-//   Math.floor(Math.random() * (max - min + 1) + min);
-
-// const randomcolor = () =>
-//   `rgb(${randomint(0, 255)}, ${randomint(0, 255)}, ${randomint(0, 255)})`;
-
-// console.log(randomcolor(0, 255));
-
-// document.querySelector('.nav__link').addEventListener('click', function (e) {
-//   this.style.backgroundColor = randomcolor();
-
-//   //stop propagation
-//   e.stopPropagation();
-// });
-
-// document.querySelector('.nav__links').addEventListener('click', function (e) {
-//   this.style.backgroundColor = randomcolor();
-// });
-
-// document.querySelector('.nav').addEventListener('click', function (e) {
-//   this.style.backgroundColor = randomcolor();
-// });
-
-//---------------192----------
